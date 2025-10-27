@@ -28,7 +28,7 @@ const HeroSection = () => {
         </button>
 
       </div>
-    </section>
+    </section>    
   );
 };
 
