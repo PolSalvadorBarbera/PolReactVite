@@ -7,6 +7,7 @@ import topProducts, { allProducts } from './data/products.js'
 import ProductGrid from './components/Product/ProductGrid.jsx'
 import FeaturedProduct from './components/Product/FeaturedProduct.jsx'
 import mavic4ProImg from './assets/Img/Mavic4Pro.jpeg'
+import Footer from './components/Footer/Footer.jsx'
 
 
 
@@ -32,7 +33,7 @@ function App() {
 
         <section className="py-12 bg-gray-900">
           <FeaturedProduct
-            title="DJI MAVIC 4 PRO"
+            title="DJI MAVIC 4 PRO"   
             subtitle="Your world in 360°"
             isNew={true}
             backgroundImage={mavic4ProImg}
@@ -44,6 +45,8 @@ function App() {
           <ProductGrid products={allProducts} />
         </section>
 
+
+        <Footer/>
       </div>
     </>
   )

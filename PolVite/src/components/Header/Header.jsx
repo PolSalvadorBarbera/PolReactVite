@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from '../../assets/Img/logo.svg';
-import searchIcon from '../../assets/Icons/search.svg';
-//import shoppingCartIcon from '../../assets/Icons/shoppingCart.svg';
+import { FaSearch, FaShoppingCart, FaUser } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -15,15 +14,19 @@ const Header = () => {
           placeholder="Search..."
           className="border-none px-4 py-2 bg-transparent text-white outline-none w-[300px]"
         />
-        <button type="submit" className="bg-gray-700 border-none text-white px-3 py-2 cursor-pointer">
-          <img src={searchIcon} alt="Buscar" className="h-5 w-5" />
+        <button type="submit" className="bg-gray-700 border-none text-white px-3 py-2 cursor-pointer hover:bg-gray-600 transition-colors">
+          <FaSearch className="h-5 w-5" />
         </button>
       </div>
-      <div className="flex space-x-5 text-xl">
-        <span className="cursor-pointer">
-          <img src={searchIcon} alt="Buscar" className="h-5 w-5" />
-        </span>
-        <span className="cursor-pointer">👤</span>
+      <div className="flex space-x-6 text-xl">
+        
+        <button className="cursor-pointer hover:text-red-500 transition-colors relative">
+          <FaShoppingCart className="h-5 w-5" />
+          <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">0</span>
+        </button>
+        <button className="cursor-pointer hover:text-red-500 transition-colors">
+          <FaUser className="h-5 w-5" />
+        </button>
       </div>
     </header>
   );
