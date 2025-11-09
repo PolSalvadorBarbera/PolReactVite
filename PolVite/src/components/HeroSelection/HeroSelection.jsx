@@ -21,7 +21,7 @@ const HeroSection = () => {
 
       <div className="relative z-10">
         <h1 className="text-6xl mb-2 text-white-600">Ready for race</h1>
-        <p className="text-2xl mb-10">Description</p>
+        <p className="text-2xl mb-10">Drone Racing League</p>
 
         <button className="bg-black text-white px-10 py-4 rounded-md text-xl cursor-pointer transition-colors duration-300 hover:bg-red-600 hover:text-black">
           Store
