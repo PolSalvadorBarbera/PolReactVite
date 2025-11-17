@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import Header from './components/Header/Header.jsx'
 import Nav from './components/Nav//Nav.jsx'
 import HeroSelection from './components/HeroSelection/HeroSelection.jsx'
@@ -6,8 +8,13 @@ import Tabs from './components/Tabs/Tabs.jsx'
 import topProducts, { allProducts } from './data/products.js'
 import ProductGrid from './components/Product/ProductGrid.jsx'
 import FeaturedProduct from './components/Product/FeaturedProduct.jsx'
-import mavic4ProImg from './assets/Img/Mavic4Pro.jpeg'
 import Footer from './components/Footer/Footer.jsx'
+
+import mavic4ProImg from './assets/Img/Mavic4Pro.jpeg'
+
+const HomePage = ({topProducts, allProducts, mavic4ProImg}) => {
+  
+}
 
 
 
