@@ -52,8 +52,12 @@ function App() {
         <Header/>
 
         <Nav/>
-                
         
+        // Definim les rutes de la pàgina 
+        <Routes>
+          <Route path='/' element ={ <HomePage topProducts={topProducts} allProducts={allProducts} mavic4ProImg={mavic4ProImg}/>}></Route>
+          <Route path='
+        </Routes>
         
 
         

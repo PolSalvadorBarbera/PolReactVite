@@ -8,6 +8,8 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
 
         {/* Sección del nombre del sitio y redes sociales */}
+        {/* Posar la secció (section) quant funcioni el codi */}
+        
         <div className="mb-8 md:mb-0 md:w-1/4">
           <h3 className="text-2xl font-bold mb-4 text-gray-100">DroneFPV Shop</h3>
           <div className="flex space-x-4 text-xl">
