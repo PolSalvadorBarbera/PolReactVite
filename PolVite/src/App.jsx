@@ -13,7 +13,30 @@ import Footer from './components/Footer/Footer.jsx'
 import mavic4ProImg from './assets/Img/Mavic4Pro.jpeg'
 
 const HomePage = ({topProducts, allProducts, mavic4ProImg}) => {
-  
+  {/*Posarem aqui tota la pàgina principal*/}
+
+  <>
+    <HeroSelection/>
+    
+    <section className="container mx-auto px-4 py-8">
+      <Tabs tabs={["New", "Promo", "Best Seller"]} />
+      <ProductGrid products={topProducts} />
+    </section>
+
+    <section className="py-12 bg-gray-900">
+      <FeaturedProduct
+        title="DJI MAVIC 4 PRO"   
+        subtitle="Your world in 360°"
+        isNew={true}
+        backgroundImage={mavic4ProImg}
+      />
+    </section>
+
+    <section className="container mx-auto px-4 py-8">
+      <h2 className="text-3xl font-bold mb-6 text-black">All Products</h2>
+      <ProductGrid products={allProducts} />
+    </section>
+  </>
 }
 
 
@@ -29,28 +52,11 @@ function App() {
         <Header/>
 
         <Nav/>
+                
         
-        <HeroSelection/>
+        
 
-        {/* Selector de productes "destacats" fem crida a ProductGrid*/}
-        <section className="container mx-auto px-4 py-8">
-          <Tabs tabs={["New", "Promo", "Best Seller"]} />
-          <ProductGrid products={topProducts} />
-        </section>
-
-        <section className="py-12 bg-gray-900">
-          <FeaturedProduct
-            title="DJI MAVIC 4 PRO"   
-            subtitle="Your world in 360°"
-            isNew={true}
-            backgroundImage={mavic4ProImg}
-          />
-        </section>
-
-        <section className="container mx-auto px-4 py-8">
-          <h2 className="text-3xl font-bold mb-6 text-black">All Products</h2>
-          <ProductGrid products={allProducts} />
-        </section>
+        
 
 
         <Footer/>

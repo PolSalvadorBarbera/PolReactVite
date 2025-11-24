@@ -7,8 +7,8 @@ const Navigation = () => {
     { name: "DJI", path: "/dji" },
     { name: "Ready to fly", path: "/ready-to-fly" },
     { name: "Configurator", path: "/configurator" },
-    { name: "Frames", path: "/frames" },         // Añade estas rutas en App.jsx también
-    { name: "Electronic", path: "/electronic" }, // Si quieres que sean navegables
+    { name: "Frames", path: "/frames" },         
+    { name: "Electronic", path: "/electronic" },
     { name: "FPV", path: "/fpv" },
     { name: "Batteries", path: "/batteries" },
     { name: "Radio", path: "/radio" },
