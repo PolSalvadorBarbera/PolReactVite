@@ -44,27 +44,25 @@ const HomePage = ({topProducts, allProducts, mavic4ProImg}) => {
 
 function App() {
   const [count, setCount] = useState(0)
-
+ 
   return (
     <>
+      {/* El BrowserRouter és necesari perque funcionin les rutes */} 
+      <BrowserRouter>
+        <div className="min-h-screen flex flex-col bg-white text-white">
+          <Header/>
 
-      <div className="min-h-screen flex flex-col bg-white text-white">
-        <Header/>
-
-        <Nav/>
-        
-        // Definim les rutes de la pàgina 
-        <Routes>
-          <Route path='/' element ={ <HomePage topProducts={topProducts} allProducts={allProducts} mavic4ProImg={mavic4ProImg}/>}></Route>
-          <Route path='
-        </Routes>
-        
-
-        
+          <Nav/>
+          
+          {/* Definim les rutes de la pàgina */} 
+          <Routes>
+            <Route path='/' element = { <HomePage topProducts={topProducts} allProducts={allProducts} mavic4ProImg={mavic4ProImg}/>}> </Route>
+          </Routes>
 
 
-        <Footer/>
-      </div>
+          <Footer/>
+        </div>
+      </BrowserRouter>
     </>
   )
 }

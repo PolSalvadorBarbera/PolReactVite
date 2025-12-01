@@ -21,7 +21,8 @@ const Navigation = () => {
       <ul className="flex justify-center p-0 m-0 list-none">
         <li className='mr-8'>
           
-          // Pàgina principal "/"
+          {/* Pàgina principal "/" */}
+
           <NavLink to = "/" className={ ({ isActive }) =>
             `text-white font-bold text-base hover:text-red-600 transition-colors duration-300
               ${isActive ? 'text-red-600 border-b-2 border-red-600 pb-2' : ''}`
@@ -32,7 +33,7 @@ const Navigation = () => {
 
         </li>
         
-        // Navegació array navItems
+        {/* Navegació array navItems */}
         {navItems.map((item, index) => (
 
           <li key={index} className="mr-8">

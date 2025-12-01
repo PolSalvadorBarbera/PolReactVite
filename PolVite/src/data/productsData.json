@@ -1,0 +1,60 @@
+{
+  "topProducts": [
+    {
+      "id": 1,
+      "name": "DJI Mini 3 Pro",
+      "image": "/src/assets/Img/mini3pro.png",
+      "price": 759
+    },
+    {
+      "id": 2,
+      "name": "DJI FPV Combo",
+      "image": "/src/assets/Img/fpv-combo.png",
+      "price": 999
+    },
+    {
+      "id": 3,
+      "name": "DJI Avata",
+      "image": "/src/assets/Img/avata.png",
+      "price": 1299
+    }
+  ],
+  "allProducts": [
+    {
+      "id": 4,
+      "name": "TBS Source One 5\" v6",
+      "image": "/src/assets/Img/tbs-source-one.png",
+      "price": 64
+    },
+    {
+      "id": 5,
+      "name": "KoneX FC H743 ELRS",
+      "image": "/src/assets/Img/konex-fc.png",
+      "price": 59
+    },
+    {
+      "id": 6,
+      "name": "Boslipo P7 6s 1480mAh",
+      "image": "/src/assets/Img/boslipo-p7.png",
+      "price": 45
+    },
+    {
+      "id": 7,
+      "name": "Another Drone Model",
+      "image": "/src/assets/Img/another-drone.png",
+      "price": 230
+    },
+    {
+      "id": 8,
+      "name": "New Flight Controller",
+      "image": "/src/assets/Img/new-fc.png",
+      "price": 75
+    },
+    {
+      "id": 9,
+      "name": "High Capacity Battery",
+      "image": "/src/assets/Img/high-capacity-batt.png",
+      "price": 55
+    }
+  ]
+}
