@@ -1,0 +1,10 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos globales que no son de Tailwind, si los necesitas */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
