@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Tabs = ({ tabs }) => {
-  const [activeTab, setActiveTab] = useState(tabs[0]); // Per defecte del Estat, la ptrimera pestanya està activa
-
+const Tabs = ({ tabs, activeTab, setActiveTab }) => { // Serveix per renderitzar les pestanyes i gestionar l'estat de la pestanya activa
   return (
     <div className="flex space-x-6 mb-8 border-b border-gray-700">
       {tabs.map((tab) => ( // Itera sobre les pestanyes rebudes com a props

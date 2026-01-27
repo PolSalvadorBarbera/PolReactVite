@@ -13,6 +13,7 @@ const Navigation = () => {
     { name: "Batteries", path: "/batteries" },
     { name: "Radio", path: "/radio" },
     { name: "Props", path: "/props" },
+    { name: "Media", path: "/media" },
   ];
 
   return (

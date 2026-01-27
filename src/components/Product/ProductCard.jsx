@@ -1,6 +1,8 @@
 import React from 'react';
 
 const ProductCard = ({ product }) => { // Component Targeta individual del producte
+  const discountedPrice = product.price * (1 - product.discountPercentage / 100);
+
   return (
     <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105">
       
@@ -12,8 +14,18 @@ const ProductCard = ({ product }) => { // Component Targeta individual del produ
       {/* Nom */}
       <h3 className="text-xl font-semibold text-white mb-2">{product.name}</h3>
       
-      {/* Preu */}
-      <p className="text-gray-400 text-lg">${product.price}</p>
+      {/* Preu amb un if per determinar si hi ha descompte */}
+      {product.discountPercentage > 0 ? (
+        <div className="flex flex-col items-center">
+          <p className="text-gray-500 text-sm line-through">${product.price}</p>
+          <p className="text-red-400 text-lg font-bold">${discountedPrice.toFixed(2)}</p>
+          <span className="bg-red-600 text-white text-xs px-2 py-1 rounded-full mt-1">
+            {product.discountPercentage}% OFF
+          </span>
+        </div>
+      ) : (
+        <p className="text-gray-400 text-lg">${product.price}</p>
+      )}
     
     </div>
   );

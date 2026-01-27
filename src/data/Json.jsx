@@ -7,7 +7,7 @@ function JsonLoader() {
   // Using useEffect for single rendering
   useEffect(() => {
     // Carregar dades de forma dinàmca amb un JSON
-    setItems(productsData.topProducts);
+    setItems(productsData);
   }, []);
 
   return (
