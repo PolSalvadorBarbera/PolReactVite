@@ -2,136 +2,136 @@
   {
     "id": 1,
     "name": "DJI Mini 3 Pro",
-    "tags": ["drone", "filming"],
+    "image": "mini3pro",
     "specs": {
       "brand": "DJI",
       "weight": "249g",
       "camera": "4K",
       "color": "White"
     },
-    "date": "2023-05-15",
-    "image": "/src/assets/Img/mini3pro.png",
+    "tags": ["drone", "filming"],
     "price": 759,
-    "discountPercentage": 10
+    "discountPercentage": 10,
+    "date": "2023-05-15"
   },
   {
     "id": 2,
     "name": "DJI FPV Combo",
-    "tags": ["drone", "fpv"],
+    "image": "fpvCombo",
     "specs": {
       "brand": "DJI",
       "weight": "810g",
       "camera": "4K",
       "color": "Black"
     },
-    "date": "2022-10-01",
-    "image": "/src/assets/Img/fpv-combo.png",
+    "tags": ["drone", "fpv"],
     "price": 999,
-    "discountPercentage": 15
+    "discountPercentage": 15,
+    "date": "2022-10-01"
   },
   {
     "id": 3,
     "name": "DJI Avata",
-    "tags": ["drone", "cinematic"],
+    "image": "avata",
     "specs": {
       "brand": "DJI",
       "weight": "410g",
       "camera": "4K",
       "color": "Gray"
     },
-    "date": "2022-08-01",
-    "image": "/src/assets/Img/avata.png",
+    "tags": ["drone", "cinematic"],
     "price": 1299,
-    "discountPercentage": 0
+    "discountPercentage": 0,
+    "date": "2022-08-01"
   },
   {
     "id": 4,
     "name": "TBS Source One 5\" v6",
-    "tags": ["fpv", "goggles"],
+    "image": "tbsSourceOne",
     "specs": {
       "brand": "TBS",
       "weight": "200g",
       "camera": "HD",
       "color": "Black"
     },
-    "date": "2023-03-01",
-    "image": "/src/assets/Img/tbs-source-one.png",
+    "tags": ["fpv", "goggles"],
     "price": 64,
-    "discountPercentage": 0
+    "discountPercentage": 0,
+    "date": "2023-03-01"
   },
   {
     "id": 5,
     "name": "KoneX FC H743 ELRS",
-    "tags": ["flight controller", "fpv"],
+    "image": "koneX",
     "specs": {
       "brand": "KoneX",
       "weight": "10g",
       "camera": null,
       "color": "Green"
     },
-    "date": "2025-06-01",
-    "image": "/src/assets/Img/konex-fc.png",
+    "tags": ["flight controller", "fpv"],
     "price": 59,
-    "discountPercentage": 0
+    "discountPercentage": 0,
+    "date": "2025-06-01"
   },
   {
     "id": 6,
     "name": "Boslipo P7 6s 1480mAh",
-    "tags": ["battery", "lipo"],
+    "image": "boslipo",
     "specs": {
       "brand": "Boslipo",
       "weight": "1480mAh",
       "camera": null,
       "color": "Black"
     },
-    "date": "2023-04-01",
-    "image": "/src/assets/Img/boslipo-p7.png",
+    "tags": ["battery", "lipo"],
     "price": 45,
-    "discountPercentage": 0
+    "discountPercentage": 0,
+    "date": "2023-04-01"
   },
   {
     "id": 7,
     "name": "Another Drone Model",
-    "tags": ["drone"],
+    "image": "anotherDrone",
     "specs": {
       "brand": "Generic",
       "weight": "500g",
       "camera": "1080p",
       "color": "White"
     },
-    "date": "2023-07-01",
-    "image": "/src/assets/Img/another-drone.png",
+    "tags": ["drone"],
     "price": 230,
-    "discountPercentage": 0
+    "discountPercentage": 0,
+    "date": "2023-07-01"
   },
   {
     "id": 8,
     "name": "New Flight Controller",
-    "tags": ["flight controller"],
+    "image": "newFc",
     "specs": {
       "brand": "Generic",
       "weight": "15g",
       "camera": null,
       "color": "Blue"
     },
-    "date": "2023-08-01",
-    "image": "/src/assets/Img/new-fc.png",
+    "tags": ["flight controller"],
     "price": 75,
-    "discountPercentage": 0
+    "discountPercentage": 0,
+    "date": "2023-08-01"
   },
   {
     "id": 9,
     "name": "High Capacity Battery",
-    "tags": ["battery"],
+    "image": "highCapacityBatt",
     "specs": {
       "brand": "Generic",
       "weight": "2000mAh",
       "camera": null,
       "color": "Red"
     },
-    "date": "2023-09-01",
-    "image": "/src/assets/Img/high-capacity-batt.png",
+    "tags": ["battery"],
     "price": 55,
-    "discountPercentage": 0
+    "discountPercentage": 0,
+    "date": "2023-09-01"
   }
 ]

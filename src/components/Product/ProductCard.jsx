@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyImage from '../LazyImage/LazyImage.jsx';
 
 const ProductCard = ({ product }) => { // Component Targeta individual del producte
   const discountedPrice = product.price * (1 - product.discountPercentage / 100);
@@ -8,7 +9,7 @@ const ProductCard = ({ product }) => { // Component Targeta individual del produ
       
       {/* Imatge */}
       <div className="w-48 h-48 flex items-center justify-center mb-4">
-        <img src={product.image} alt={product.name} className="max-w-full max-h-full object-contain" />
+        <LazyImage src={product.image} alt={product.name} />
       </div>
       
       {/* Nom */}

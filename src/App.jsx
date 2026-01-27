@@ -14,7 +14,7 @@ import Gallery from './components/Media/Gallery.jsx'
 import AudioPlayer from './components/Media/AudioPlayer.jsx'
 import VideoPlayer from './components/Media/VideoPlayer.jsx'
 
-import mavic4ProImg from './assets/Img/Mavic4Pro.jpeg'
+import mavic4ProImg from './assets/img/Mavic4Pro.jpeg'
 
 const HomePage = ({allProducts, mavic4ProImg}) => {
   const [activeTab, setActiveTab] = useState("New");

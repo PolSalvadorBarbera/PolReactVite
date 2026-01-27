@@ -1,0 +1,29 @@
+
+En proyectos con Vite (y en general en bundlers como Webpack), la estructura de carpetas para assets depende del tipo de uso que les des. Vamos a desglosarlo para que quede claro cuál es más correcto según el contexto:
+
+1. Carpeta public/ (para assets estáticos no procesados)
+Ubicación típica: public/assets/ (o directamente public/ con subcarpetas).
+Cuándo usarla:
+Archivos que no necesitan ser importados en el código (como módulos de JavaScript/TypeScript).
+Se sirven directamente desde la raíz del servidor (ej. http://localhost:3000/assets/img/logo.png).
+Ejemplos: favicon.ico, robots.txt, archivos grandes que no cambian, o imágenes que se referencian por URL en HTML/CSS sin importar.
+Ventajas: No pasan por el bundler, por lo que son más rápidos para archivos estáticos grandes. Vite los copia tal cual al build.
+Desventajas: No se optimizan (no se comprimen, no se convierten a WebP, no tienen hashing para cache-busting). No puedes usarlos en imports dinámicos o lazy loading avanzado.
+Es correcto tener public/assets/? Sí, es una convención común. Por ejemplo, muchos proyectos tienen public/assets/img/ para imágenes estáticas.
+2. Carpeta assets (para assets procesados e importados)
+Ubicación típica: assets (con subcarpetas como img/, fonts/, etc.).
+Cuándo usarla:
+Archivos que se importan en componentes (ej. import logo from './assets/img/logo.svg').
+Necesitan procesamiento: compresión, conversión de formatos (PNG a WebP), hashing para evitar cache issues, tree-shaking, etc.
+Ideal para imágenes en componentes React, fuentes, o assets que cambian con el código.
+Ventajas: Vite los optimiza automáticamente. Puedes usar lazy loading, placeholders, y el bundler maneja dependencias. Mejor para performance en apps modernas.
+Desventajas: Los archivos se incluyen en el bundle, lo que puede aumentar el tamaño si son muchos/grandes.
+¿Cuál es más correcto en tu caso?
+Si tus assets son estáticos y no los importas (ej. solo los referencias por URL en HTML o CSS), public/assets/ es perfecto y más eficiente.
+Si los importas en componentes (como hicimos con las imágenes de productos y el logo), assets es la opción correcta. Es la estructura que implementamos, ya que permite optimización y evita errores de importación.
+Recomendación para tu proyecto:
+Mantén public/assets/ solo para archivos realmente estáticos que no se importen (ej. si tienes un favicon.ico o imágenes de fondo en CSS puro).
+Para todo lo demás (imágenes en componentes, como las de productos), usa assets. Esto es lo que hicimos al mover las imágenes y cambiar los imports.
+Si tienes assets mixtos, puedes tener ambas carpetas: public/assets/ para estáticos y assets para importados. Pero evita duplicados para no confundirte.
+
+¿Quieres que ajuste algo en la estructura o que mueva más archivos?

@@ -1,12 +1,14 @@
 import React from 'react';
-import logo from '../../assets/Img/logo.svg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import logo from '../../public/assets/img/logo.svg';
+
 import { FaSearch, FaShoppingCart, FaUser } from 'react-icons/fa';
 
 const Header = () => {
   return (
     <header className="flex justify-between items-center px-10 py-4 bg-black text-white w-full box-border">
       <div className="logo">
-        <img src={logo} alt="Drone Racing League Logo" className="h-10" />
+        <LazyLoadImage src={logo} alt="Drone Racing League Logo" className="h-10" />
       </div>
       <div className="flex bg-gray-800 rounded-md overflow-hidden">
         <input
