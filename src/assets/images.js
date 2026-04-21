@@ -1,27 +1,29 @@
-import mini3pro from './img/mini3pro.png';
-import fpvCombo from './img/fpv-combo.png';
-import avata from './img/avata.png';
-import tbsSourceOne from './img/tbs-source-one.png';
-import koneX from './img/optimized/FC_KoneX_H743_ELRS.webp';
-import boslipo from './img/boslipo-p7.png';
+import mini3pro from './img/mini3pro.webp';
+import djiFpvCombo from './img/djiFpvCombo.webp';
+import djiAvata from './img/djiAvata.webp';
+import tbsSourceOne from './img/tbsSourceOne.webp';
+import stackIFlightBorgF7 from './img/stackIFlightBorgF7.webp';
+import bosLiPo1480mAh6S from './img/bosLiPo1480mAh6S.webp';
+/*
 import anotherDrone from './img/another-drone.png';
 import newFc from './img/new-fc.png';
 import highCapacityBatt from './img/high-capacity-batt.png';
 import logo from './img/logo.svg';
 import mavic4ProImg from './img/Mavic4Pro.jpeg';
 import placeholder from './img/placeholder.png';
-
+*/
 export const images = {
   mini3pro,
-  fpvCombo,
-  avata,
+  djiFpvCombo,
+  djiAvata,
   tbsSourceOne,
-  koneX,
-  boslipo,
+  stackIFlightBorgF7,
+  bosLiPo1480mAh6S/*,
   anotherDrone,
   newFc,
   highCapacityBatt,
   logo,
   mavic4ProImg,
   placeholder,
+  */
 };

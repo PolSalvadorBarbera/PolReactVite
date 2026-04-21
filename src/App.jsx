@@ -9,8 +9,6 @@ import allProducts from './data/productsData.json'
 import ProductGrid from './components/Product/ProductGrid.jsx'
 import FeaturedProduct from './components/Product/FeaturedProduct.jsx'
 import Footer from './components/Footer/Footer.jsx'
-
-import Gallery from './components/Media/Gallery.jsx'
 import AudioPlayer from './components/Media/AudioPlayer.jsx'
 import VideoPlayer from './components/Media/VideoPlayer.jsx'
 
@@ -83,7 +81,6 @@ function App() {
             
             <Route path='/media' element={
               <div className="min-h-screen bg-gray-100">
-                <Gallery />
                 <AudioPlayer />
                 <VideoPlayer />
               </div>

@@ -17,7 +17,7 @@
   {
     "id": 2,
     "name": "DJI FPV Combo",
-    "image": "fpvCombo",
+    "image": "djiFpvCombo",
     "specs": {
       "brand": "DJI",
       "weight": "810g",
@@ -32,7 +32,7 @@
   {
     "id": 3,
     "name": "DJI Avata",
-    "image": "avata",
+    "image": "djiAvata",
     "specs": {
       "brand": "DJI",
       "weight": "410g",
@@ -61,15 +61,15 @@
   },
   {
     "id": 5,
-    "name": "KoneX FC H743 ELRS",
-    "image": "koneX",
+    "name": "IFlight Borg F7 20x20 60A",
+    "image": "stackIFlightBorgF7",
     "specs": {
-      "brand": "KoneX",
+      "brand": "IFlight",
       "weight": "10g",
       "camera": null,
-      "color": "Green"
+      "color": "Black"
     },
-    "tags": ["flight controller", "fpv"],
+    "tags": ["fc", "esc", "fpv", "stack"],
     "price": 59,
     "discountPercentage": 0,
     "date": "2025-06-01"
@@ -77,14 +77,14 @@
   {
     "id": 6,
     "name": "Boslipo P7 6s 1480mAh",
-    "image": "boslipo",
+    "image": "bosLiPo1480mAh6S",
     "specs": {
       "brand": "Boslipo",
       "weight": "1480mAh",
       "camera": null,
       "color": "Black"
     },
-    "tags": ["battery", "lipo"],
+    "tags": ["battery", "lipo", "6s"],
     "price": 45,
     "discountPercentage": 0,
     "date": "2023-04-01"

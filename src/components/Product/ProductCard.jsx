@@ -5,29 +5,52 @@ const ProductCard = ({ product }) => { // Component Targeta individual del produ
   const discountedPrice = product.price * (1 - product.discountPercentage / 100);
 
   return (
-    <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105">
+    <div className="max-w-xs w-full bg-gray-800 rounded-2xl shadow-lg overflow-hidden border border-gray-700 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl cursor-pointer">
       
-      {/* Imatge */}
-      <div className="w-48 h-48 flex items-center justify-center mb-4">
-        <LazyImage src={product.image} alt={product.name} />
+      {/* Imatge Area */}
+      <div className="relative h-72 bg-white overflow-hidden"> // Fons blanc per al producte
+        <LazyImage
+          src={product.image}
+          alt={product.name}
+          className="w-full h-full object-contain p-4"
+        />
+        
+        {/* Descompte */}
+        {product.discountPercentage > 0 && (
+          <div className="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+            -{product.discountPercentage}%
+          </div>
+        )}
       </div>
-      
-      {/* Nom */}
-      <h3 className="text-xl font-semibold text-white mb-2">{product.name}</h3>
-      
-      {/* Preu amb un if per determinar si hi ha descompte */}
-      {product.discountPercentage > 0 ? (
-        <div className="flex flex-col items-center">
-          <p className="text-gray-500 text-sm line-through">${product.price}</p>
-          <p className="text-red-400 text-lg font-bold">${discountedPrice.toFixed(2)}</p>
-          <span className="bg-red-600 text-white text-xs px-2 py-1 rounded-full mt-1">
-            {product.discountPercentage}% OFF
-          </span>
-        </div>
-      ) : (
-        <p className="text-gray-400 text-lg">${product.price}</p>
-      )}
-    
+
+      {/* Content Area */}
+      <div className="p-6 bg-gray-700 border-t border-gray-600">
+        <h3 className="text-gray-100 text-xl font-bold mb-2 tracking-tight">
+          {product.name}
+        </h3>
+        
+        {product.discountPercentage > 0 ? ( // Preu descompte i original X 
+          <div className="flex items-baseline gap-3 mb-4">
+            <span className="text-2xl font-extrabold text-red-500">
+              ${discountedPrice.toFixed(2)}
+            </span>
+            <span className="text-sm text-gray-400 line-through">
+              ${product.price}
+            </span>
+          </div>
+        ) : ( // Sense descompte
+          <div className="mb-4">
+            <span className="text-2xl font-extrabold text-gray-100">
+              ${product.price}
+            </span>
+          </div>
+        )}
+
+        {/* Button */}
+        <button className="w-full bg-gray-900 hover:bg-gray-950 text-white font-semibold py-3 px-4 rounded-xl transition-colors duration-200">
+          Add to Cart
+        </button>
+      </div>
     </div>
   );
 };
